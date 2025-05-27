@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meghana | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #7e57c2;
+      --light-bg: #f3f0ff;
+      --text-color: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: var(--light-bg);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background: transparent;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .info p {
+      margin: 0.3rem 0;
+    }
+
+    ul.skills {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-left: 0;
+    }
+
+    ul.skills li {
+      background: #ddd;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    .project-card {
+      background: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-left: 4px solid var(--primary-color);
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #eee;
+      color: #555;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background 0.3s;
+    }
+
+    a.button:hover {
+      background-color: #5e35b1;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meghana</h1>
+    <p>Computer Science Student | Developer | Tech Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="info">
+      <p><strong>Name:</strong> Meghana</p>
+      <p><strong>Email:</strong> meghana@example.com</p>
+      <p><strong>Section:</strong> CSE - BE 3rd Year</p>
+      <p><strong>University ID:</strong> 22BCS1234</p>
+      <p><strong>State:</strong> Karnataka</p>
+      <p><strong>Education:</strong> B.E. in Computer Science Engineering, Chandigarh University</p>
+      <p>I’m passionate about software development, networks, and secure systems. Currently preparing for the GATE Aerospace exam and working on exciting academic research.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Java</li>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>SQL</li>
+      <li>OOPs Concepts</li>
+      <li>Data Structures & Algorithms</li>
+      <li>Computer Networks</li>
+      <li>Operating Systems</li>
+      <li>Servlets</li>
+      <li>Git & GitHub</li>
+      <li>Responsive Design</li>
+      <li>MySQL</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>🔐 Secure File Transfer System</h3>
+      <p>Built a secure file transfer system ensuring encrypted transmission of sensitive data between users. Integrated AES encryption and access control to prevent data leakage.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>🌐 IPv4/IPv6 Protocol Analysis Over 3G</h3>
+      <p>Analyzed the performance of IPv4 and IPv6 protocols on 3G mobile networks. Conducted latency, packet loss, and throughput tests, and presented findings in a research format.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>📡 HTTP Servlet Request/Response</h3>
+      <p>Developed a Java Servlet application simulating HTTP GET/POST handling. Demonstrated dynamic server responses using user inputs and Java backend processing.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>📱 Java Mini App - Expense Tracker</h3>
+      <p>Created a console-based expense tracker in Java using OOPs and file handling. Users can add, view, and delete expenses with persistent storage support.</p>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> meghana@example.com</p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/meghana" target="_blank">linkedin.com/in/meghana</a></p>
+    <a class="button" href="mailto:meghana@example.com">Send Email</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Meghana. All rights reserved.
+  </footer>
+
+</body>
+</html>
